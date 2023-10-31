@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+@font-face {
+  font-family: "Whyte Inktrap";
+  src: url("/public/WhyteInktrap-Black.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Milky Way";
+  src: url("/public/MilkyWay.ttf");
+}
+
+@font-face {
+  font-family: "Stars";
+  src: url("/public/Stars.ttf");
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}

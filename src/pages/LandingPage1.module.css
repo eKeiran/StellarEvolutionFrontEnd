@@ -1,0 +1,97 @@
+@keyframes slideFromLeft1 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromBottomLeftToCenter {
+  0% {
+    transform: translate(-100%, 280%) scale(0.4);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(150%, 40%) scale(1.4);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft2 {
+  0% {
+    transform: translateX(-100%) scale(0.4);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-40%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateRocket {
+  0% {
+    transform: rotateX(30deg);
+  }
+
+  25% {
+    transform: rotateX(0deg);
+  }
+
+  50% {
+    transform: rotateX(-30deg);
+  }
+
+  75% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(30deg);
+
+  }
+}
+
+.asteroidAnimation {
+  animation: slideFromLeft2 3s ease-in-out forwards;
+}
+
+.rocketContainer {
+  animation: rotateRocket 5s ease-in-out infinite;
+}
+
+.rocketAnimation {
+  transform: translate(150%, 280%) scale(0.6);
+  animation: slideFromBottomLeftToCenter 4s ease-in-out forwards;
+}
+
+@keyframes fadeInFromBelow {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.textAnimation {
+  animation: fadeInFromBelow 2s ease-in-out forwards;
+  position: absolute;
+  bottom: 0%;
+  padding-bottom: 3rem;
+  font-size: 3.3rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.648);
+  width: 100vw;
+  height: 22vh;
+  font-family: "stars";
+  z-index: 3
+}

@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="unsafe-url">
+    <title>Stellar Data Prediction</title>
+</head>
+<body>
+    <h1>Stellar Data Prediction Form</h1>
+    
+    <form method="post" action="{% url 'predict' %}">
+        {% csrf_token %}
+        <div>
+            <label for="bv">B-V index:</label>
+            <input type="text" id="bv" name="bv" required>
+        </div>
+        <div>
+            <label for="plx">Parallax (Plx):</label>
+            <input type="text" id="plx" name="plx" required>
+        </div>
+        <div>
+            <label for="vmag">Visual Magnitude:</label>
+            <input type="text" id="vmag" name="vmag" required>
+        </div>
+        <div>
+            <label for="spType">Spectral Type:</label>
+            <input type="text" id="spType" name="spType" required>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <div id="result">
+        {% if predictions %}
+            <h2>Predictions:</h2>
+            <p>Mass: {{ predictions.mass }}</p>
+            <p>Temperature: {{ predictions.temperature }}</p>
+            <p>Absolute Magnitude: {{ predictions.absolute_mag }}</p>
+            <p>Predicted Spectral Type: {{ predictions.predicted_spType }}</p>
+        {% endif %}
+    </div>
+</body>
+</html> -->
